@@ -8,7 +8,23 @@
   box-sizing: border-box;
 }
 
-body {
+body body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+
+  background: 
+    linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    ),
+    url("assets/images/background.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+{
   font-family: 'Arial', sans-serif;
   color: #fff;
   line-height: 1.5;
@@ -401,4 +417,5 @@ body::after {
     opacity: 1;
     transform: translateY(0);
   }
+
 }
