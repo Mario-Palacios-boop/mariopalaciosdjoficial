@@ -4,95 +4,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mario Palacios | DJ & Productor</title>
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 
-  <!-- HERO / PRESENTACIÓN -->
-  <header class="hero">
-    <div class="hero-content fade-group delay-1">
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content fade-in fade-delay-1">
 
-      <div class="profile-wrapper">
-        <img src="assets/images/profile.webp" alt="Mario Palacios DJ" class="profile-img">
-      </div>
-
-      <h1>Mario Palacios</h1>
-      <h2>DJ & Productor</h2>
-      <p>Electronic • Afrohouse • Latin House</p>
-
+    <div class="profile-wrapper">
+      <img src="assets/images/profile.webp" alt="Mario Palacios DJ" class="profile-img">
     </div>
 
-    <div class="hero-buttons fade-group delay-2">
+    <h1>Mario Palacios</h1>
+    <h2>DJ & Productor</h2>
+    <p>Electronic • Afrohouse • Latin House</p>
+
+    <div class="hero-buttons fade-in fade-delay-2">
       <a href="#music" class="btn-primary">Escuchar música</a>
       <a href="https://wa.me/573024594555" target="_blank" class="btn-secondary">Booking</a>
     </div>
-  </header>
 
-  <!-- GALERÍA -->
-  <section id="gallery" class="gallery-section fade-group delay-3">
-    <h2>Galería</h2>
-    <p class="gallery-subtitle">Momentos, sets y energía en vivo</p>
+  </div>
+</header>
 
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="assets/images/gallery1.webp" alt="Mario Palacios DJ en vivo">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/images/gallery2.webp" alt="DJ Set Afro House">
-      </div>
-      <a href="https://youtube.com/@mariopalaciosdj" target="_blank" class="gallery-item video">
-        <img src="assets/images/video-thumb1.webp" alt="Video set DJ">
-        <span class="play-icon">▶</span>
-      </a>
-      <div class="gallery-item">
-        <img src="assets/images/gallery3.webp" alt="Evento DJ Mario Palacios">
-      </div>
+<!-- GALERÍA -->
+<section id="gallery" class="gallery-section fade-in fade-delay-3">
+  <h2>Galería</h2>
+  <p class="gallery-subtitle">Momentos, sets y energía en vivo</p>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="assets/images/gallery1.webp" alt="DJ en vivo">
     </div>
-  </section>
 
-  <!-- MÚSICA -->
-  <section id="music" class="music-section">
-    <h2>Escucha mi música</h2>
-    <div class="music-links">
-      <!-- SoundCloud -->
-      <a href="https://soundcloud.com/mario-palacios-oficial/sal-afro-2026-mario-palacios"
-         target="_blank" class="music-card soundcloud">
-        <svg viewBox="0 0 512 512" class="music-icon">
-          <path fill="#fff" d="M437.5 192a91.42 91.42 0 0 0-15.7 1.5A79.57 79.57 0 0 0 256 160c-43 0-78.1 33.9-79.5 76.6C87.9 243.5 48 287.3 48 336c0 44.2 35.8 80 80 80h309c44.2 0 80-35.8 80-80s-35.8-80-80-80z"/>
-        </svg>
-        <span>SoundCloud</span>
-      </a>
-
-      <!-- YouTube -->
-      <a href="https://youtube.com/@mariopalaciosdj"
-         target="_blank" class="music-card youtube">
-        <svg viewBox="0 0 24 24" class="music-icon">
-          <path fill="#fff" d="M23.5,6.2c0-0.6-0.2-1-0.8-1.4C21.4,4.5,12,4.5,12,4.5s-9.4,0-10.7,0.3c-0.6,0.3-0.8,0.8-0.8,1.4C0.5,7.5,0.5,12,0.5,12s0,4.5,0.3,5.8c0.1,0.6,0.5,1,1.1,1.3c1.3,0.3,10.7,0.3,10.7,0.3s9.4,0,10.7-0.3c0.6-0.3,0.8-0.7,0.8-1.4c0.3-1.3,0.3-5.8,0.3-5.8S23.8,7.5,23.5,6.2z M9.7,15.5V8.5l6.5,3.5L9.7,15.5z"/>
-        </svg>
-        <span>YouTube</span>
-      </a>
+    <div class="gallery-item">
+      <img src="assets/images/gallery2.webp" alt="Set Afro House">
     </div>
-  </section>
 
-  <!-- REDES & CONTENIDO -->
-  <section id="media" class="media-section">
-    <h2>Redes & Contenido</h2>
-    <p class="media-subtitle">Sets, clips y contacto directo</p>
+    <a href="https://youtube.com/@mariopalaciosdj" target="_blank" class="gallery-item video">
+      <img src="assets/images/video-thumb1.webp" alt="Video set">
+      <span class="play-icon">▶</span>
+    </a>
 
-    <div class="media-grid">
-      <!-- Instagram -->
-      <a href="https://instagram.com/mariopalaciosdj" target="_blank" class="media-card instagram">
-        <svg viewBox="0 0 448 512" class="media-icon">
-          <path fill="#fff" d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54.26,54.26,0,0,0-30.65-30.65C291.45,124,224,124,224,124s-67.45,0-94.06,6.93a54.26,54.26,0,0,0-30.65,30.65C93,169.55,93,256,93,256s0,86.45,6.29,94.06a54.26,54.26,0,0,0,30.65,30.65C156.55,388,224,388,224,388s67.45,0,94.06-6.93a54.26,54.26,0,0,0,30.65-30.65C355,342.45,355,256,355,256S355,169.55,348.71,161.66ZM224,338a82,82,0,1,1,82-82A82,82,0,0,1,224,338Zm85.33-148.1a19.2,19.2,0,1,1,19.2-19.2A19.19,19.19,0,0,1,309.33,189.9Z"/>
-        </svg>
-        <span>Instagram</span>
-      </a>
+    <div class="gallery-item">
+      <img src="assets/images/gallery3.webp" alt="Evento DJ">
+    </div>
+  </div>
+</section>
 
-      <!-- TikTok -->
-      <a href="https://www.tiktok.com/@mariopalaciosdj" target="_blank" class="media-card tiktok">
-        <svg viewBox="0 0 256 256" class="media-icon">
+<!-- MÚSICA -->
+<section id="music" class="music-section fade-in fade-delay-3">
+  <h2>Escucha mi música</h2>
+
+  <div class="music-links">
+    <a href="https://soundcloud.com/mario-palacios-oficial" target="_blank" class="music-card">
+      <svg viewBox="0 0 64 64" class="music-icon">
+        <path d="M16 40c0-8 4-14 10-14 1 0 2 0 3 1 2-6 7-10 13-10 8 0 14 7 14 15 0 6-4 11-10 11H18c-1 0-2-1-2-3z"/>
+      </svg>
+      <span>SoundCloud</span>
+    </a>
+
+    <a href="https://youtube.com/@mariopalaciosdj" target="_blank" class="music-card">
+      <svg viewBox="0 0 64 64" class="music-icon">
+        <path d="M58 20c-1-4-4-7-8-8-6-1-18-1-18-1s-12 0-18 1c-4 1-7 4-8 8-1 6-1 12-1 12s0 6 1 12c1 4 4 7 8 8 6 1 18 1 18 1s12 0 18-1c4-1 7-4 8-8 1-6 1-12 1-12s0-6-1-12z"/>
+        <polygon points="26,40 26,24 42,32"/>
+      </svg>
+      <span>YouTube</span>
+    </a>
+  </div>
+</section>
+
+<!-- REDES -->
+<section id="media" class="media-section fade-in fade-delay-3">
+  <h2>Redes & Contenido</h2>
+  <p class="media-subtitle">Conecta conmigo</p>
+
+  <div class="media-grid">
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/mariopalaciosdj" target="_blank" class="media-card">
+      <svg viewBox="0 0 24 24" class="media-icon">
+        <path d="M7 2h10c3 0 5 2 5 5v10c0 3-2 5-5 5H7c-3 0-5-2-5-5V7c0-3 2-5 5-5zm5 5a5 5 0 100 10 5 5 0 000-10zm6.5-.9a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/>
+      </svg>
+      <span>Instagram</span>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://facebook.com/mariopalaciosdj" target="_blank" class="media-card">
+      <svg viewBox="0 0 24 24" class="media-icon">
+        <path d="M22 12a10 10 0 10-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0022 12z"/>
+      </svg>
+      <span>Facebook</span>
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://tiktok.com/@mariopalaciosdj" target="_blank" class="media-card">
+      <svg viewBox="0 0 24 24" class="media-icon">
+        <path d="M21 8.3c-1.3 0-2.5-.4-3.5-1.1V15a6 6 0 11-6-6c.4 0 .8 0 1.2.1v3a3 3 0 103 3V2h3a5.9 5.9 0 003.3 3.3z"/>
+      </svg>
+      <span>TikTok</span>
+    </a>
+
+    <!-- Gmail -->
+    <a href="mailto:mariopalaciosdj@gmail.com" class="media-card">
+      <svg viewBox="0 0 24 24" class="media-icon">
+        <path d="M2 6l10 7 10-7v12H2z"/>
+      </svg>
+      <span>Gmail</span>
+    </a>
+
+  </div>
+</section>
+
+</body>
+</html>
 
  
     
       
+
