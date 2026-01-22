@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   color: #fff;
   background: url("assets/images/background.webp") center / cover no-repeat fixed;
   background-color: #000;
@@ -62,15 +62,6 @@ body {
   text-decoration: none;
   font-size: 0.85rem;
   color: #fff;
-  transition: 0.3s;
-}
-
-.btn-primary {
-  background: rgba(255,255,255,0.15);
-}
-
-.btn-secondary {
-  border: 1px solid rgba(255,255,255,0.4);
 }
 
 /* SECCIONES */
@@ -86,27 +77,27 @@ section {
   gap: 30px;
 }
 
-.gallery-item {
+.gallery-item.vertical {
+  aspect-ratio: 1284 / 2282;
   border-radius: 30px;
   overflow: hidden;
+  background: rgba(255,255,255,0.04);
 }
 
-.gallery-item img {
+.gallery-item img,
+.gallery-item video {
   width: 100%;
   height: 100%;
+  display: block;
+}
+
+.gallery-item video {
   object-fit: cover;
-  filter: grayscale(100%);
-  transition: 0.5s;
 }
 
-.gallery-item:hover img {
-  filter: grayscale(0%);
-  transform: scale(1.08);
-}
-
-.play-icon {
-  position: absolute;
-  font-size: 3rem;
+.gallery-item.flyer img {
+  object-fit: contain;
+  background: #000;
 }
 
 /* MÚSICA */
@@ -125,15 +116,15 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 12px;
+  align-items: center;
+  gap: 10px;
   color: #fff;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .music-icon {
-  width: 46px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
   fill: #fff;
 }
 
@@ -149,17 +140,10 @@ section {
   background: rgba(255,255,255,0.07);
   border-radius: 26px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 14px;
   color: #fff;
   text-decoration: none;
-}
-
-.media-icon {
-  width: 42px;
-  height: 42px;
-  fill: #fff;
 }
 
 /* ANIMACIONES */
@@ -170,17 +154,41 @@ section {
 
 .fade-delay-1 { animation-delay: 0.2s; }
 .fade-delay-2 { animation-delay: 0.6s; }
-.fade-delay-3 { animation-delay: 1s; }
 
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
 }
- 
 
+/* ===== FIX VISUAL GALERÍA (NO CAMBIA DISEÑO) ===== */
+
+.gallery-item video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  background: #000;
+}
+
+.gallery-item.flyer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+.gallery-item video,
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.gallery-item video {
+  background: #000;
+  object-fit: cover;
+}
+
+.gallery-item.flyer img {
+  object-fit: contain;
+}
